@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        arr =[  [1,2,3],
+                [1,2,3],
+                [1,2,3]
+        ]
+    var i,j;
+        
+            for ( i = 0; i <  3; i++) {
+              for ( j = 0; j <i; j++) {
+                //swap element[i,j] and element[j,i]
+                var temp = arr[i][j];
+                arr[i][j] = arr[j][i];
+                arr[j][i] = temp;
+              }
+            }
+        for(i=0;i<=3;i++){
+            for(j=0;j<3;j++){
+                document.write(arr[i][j]+" ");
+            }document.write("<br>")
+        }document.write("<br>")
+    </script>
+</body>
+</html>
